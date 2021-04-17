@@ -2,23 +2,24 @@ using System;
 
 namespace CSharp_Custom_List
 {
-    public class List
+
+    public class List<T>
     {
         private class Node
         {
             private Node next;
             private Node last;
 
-            private float value;
+            private T value;
 
-            public Node(float v)
+            public Node(T v)
             {
                 this.value = v;
             }
 
             public Node Next { get => next; set => next = value; }
             public Node Last { get => Last; set => Last = value; }
-            public float Value { get => value; set => this.value = value; }
+            public T Value { get => value; set => this.value = value; }
         }
 
         private int size;
@@ -31,7 +32,7 @@ namespace CSharp_Custom_List
         /// <param name="v">
         /// novo valor
         /// </param>
-        public void Add(float v)
+        public void Add(T v)
         {
             var newNode = new Node(v);
 

@@ -7,9 +7,9 @@ namespace CSharp_Custom_List
     {
         static void Main(string[] args)
         {
-            List myList = new List();
+            List<float> myList = new List<float>();
 
-            myList.Add(5);
+            myList.Add(2);
             myList.Add(3);
             myList.Add(1);
             myList.Add(7);
