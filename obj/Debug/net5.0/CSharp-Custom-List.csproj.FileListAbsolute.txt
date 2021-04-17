@@ -1,0 +1,16 @@
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.exe
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.deps.json
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.runtimeconfig.json
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.runtimeconfig.dev.json
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.dll
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\ref\CSharp-Custom-List.dll
+D:\dev\CSharp-Custom-List\bin\Debug\net5.0\CSharp-Custom-List.pdb
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.csprojAssemblyReference.cache
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.AssemblyInfoInputs.cache
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.AssemblyInfo.cs
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.csproj.CoreCompileInputs.cache
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.dll
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\ref\CSharp-Custom-List.dll
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.pdb
+D:\dev\CSharp-Custom-List\obj\Debug\net5.0\CSharp-Custom-List.genruntimeconfig.cache
