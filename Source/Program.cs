@@ -9,15 +9,22 @@ namespace CSharp_Custom_List
         {
             List<float> myList = new List<float>();
 
-            myList.Add(2);
-            myList.Add(3);
             myList.Add(1);
-            myList.Add(7);
-            myList.Add(3);
-            //myList.ShowData();
-            //Console.WriteLine(myList.Size);
+            myList.Add(1);
+            myList.Add(1);
+            myList.Add(1);
 
-            Console.WriteLine(myList.Get(2));
+            myList.ShowData();
+            myList.Remove(1);
+            Console.WriteLine("##########################");
+            myList.ShowData();
+
+            myList.Add(3);
+            myList.Add(3);
+            myList.Add(3);
+
+            Console.WriteLine("##########################");
+            myList.ShowData();
 
             Console.ReadKey();
         }

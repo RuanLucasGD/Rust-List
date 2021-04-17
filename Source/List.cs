@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace CSharp_Custom_List
 {
@@ -18,7 +19,7 @@ namespace CSharp_Custom_List
             }
 
             public Node Next { get => next; set => next = value; }
-            public Node Last { get => Last; set => Last = value; }
+            public Node Last { get => last; set => last = value; }
             public T Value { get => value; set => this.value = value; }
         }
 
@@ -39,6 +40,7 @@ namespace CSharp_Custom_List
             if (head == null)
             {
                 head = newNode;
+                head.Last = head;
             }
             else
             {
@@ -49,6 +51,7 @@ namespace CSharp_Custom_List
                     current = current.Next;
                 }
 
+                newNode.Last = current;
                 current.Next = newNode;
             }
 
@@ -106,6 +109,58 @@ namespace CSharp_Custom_List
             TreateError("Index not exist on this list");
 
             return default(T);
+        }
+
+        /// <summary>
+        /// remove determinado elemento da lista
+        /// </summary>
+        /// <param name="v">
+        /// elemento a ser removido
+        /// </param>
+        public void Remove(T v)
+        {
+            if (head == null)
+            {
+                TreateError("List is empty");
+            }
+
+            Node node = head;
+
+            // checando primeiro elemento da lista
+            if (Equal(head.Value, v))
+            {
+                head = head.Next;
+                head.Last = head;
+            }
+
+            // checando elementos do meio da lista
+            while (node.Next != null)
+            {
+                if (Equal(v, node.Value))
+                {
+                    node.Last.Next = node.Next;
+                    node.Next.Last = node.Last;
+                    node = null;
+                    return;
+                }
+
+                node = node.Next;
+            }
+
+            // checando ultimo elemento da lista
+            if (Equal(v, node.Value))
+            {
+                node.Next = null;
+                node.Last.Next = null;
+                node = null;
+            }
+
+            size++;
+
+            bool Equal(T a, T b)
+            {
+                return EqualityComparer<T>.Default.Equals(a, b);
+            }
         }
 
         /// <summary>
