@@ -14,9 +14,10 @@ namespace CSharp_Custom_List
             myList.Add(1);
             myList.Add(7);
             myList.Add(3);
-            myList.ShowData();
+            //myList.ShowData();
+            //Console.WriteLine(myList.Size);
 
-            Console.WriteLine(myList.Size);
+            Console.WriteLine(myList.Get(2));
 
             Console.ReadKey();
         }

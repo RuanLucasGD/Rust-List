@@ -74,11 +74,52 @@ namespace CSharp_Custom_List
             }
         }
 
+        public T Get(int index)
+        {
+            if (head == null)
+            {
+                TreateError("List is empty");
+            }
+
+            int currentIndex = 0;
+
+            Node node = head;
+
+            while (node.Next != null)
+            {
+                if (currentIndex == index)
+                {
+                    return node.Value;
+                }
+
+                node = node.Next;
+                currentIndex++;
+            }
+
+            // evita que o ultimo elemento da lista seja ignorado
+            // caso o index seja igual ao ultimo elemento
+            if (currentIndex == index)
+            {
+                return node.Value;
+            }
+
+            TreateError("Index not exist on this list");
+
+            return default(T);
+        }
+
         /// <summary>
         /// </summary>
         /// <value>
         /// Tamanho da lista
         /// </value>
         public int Size { get => size; }
+
+        private void TreateError(string msg)
+        {
+            Console.WriteLine(msg);
+            Console.ReadKey();
+            Environment.Exit(-1);
+        }
     }
 }
